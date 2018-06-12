@@ -15,7 +15,6 @@ module.exports = new datafire.Action({
     let allIssues = [];
     let lastIssues = null;
     while (!lastIssues || lastIssues.length) {
-      console.log(input);
       lastIssues = await github.repos.owner.repo.issues.get({
         repo: input.repo,
         owner: input.owner,

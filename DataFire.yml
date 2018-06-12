@@ -13,3 +13,4 @@ tasks:
       direction: desc
 actions:
   get_all_github_issues: ./actions/get_all_github_issues.js
+  sync_to_sheet: ./actions/sync_to_sheet.js

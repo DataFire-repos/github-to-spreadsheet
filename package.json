@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@datafire/github": "5.0.2"
+    "@datafire/github": "5.0.2",
+    "@datafire/google_sheets": "4.0.0"
   }
 }
