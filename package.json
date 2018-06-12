@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@datafire/github": "5.0.2"
+  }
+}

@@ -1,0 +1,15 @@
+options:
+  cors: true
+tasks:
+  task:
+    schedule: rate(1 day)
+    action: github/repos.owner.repo.issues.get
+    accounts: {}
+    input:
+      owner: LucyBot-Inc
+      repo: api-spec-converter
+      state: all
+      sort: created
+      direction: desc
+actions:
+  get_all_github_issues: ./actions/get_all_github_issues.js
