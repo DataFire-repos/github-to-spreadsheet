@@ -1,16 +1,14 @@
 options:
   cors: true
 tasks:
-  task:
-    schedule: rate(1 day)
-    action: github/repos.owner.repo.issues.get
+  sync_issues:
+    schedule: rate(1 hour)
+    action: sync_to_sheet
     accounts: {}
     input:
       owner: LucyBot-Inc
       repo: api-spec-converter
-      state: all
-      sort: created
-      direction: desc
+      sheet_id: 1KKGB0VNKMhGGFQGjMGTBn4kXrm3Puasn3N8q8f2A7zw
 actions:
   get_all_github_issues: ./actions/get_all_github_issues.js
   sync_to_sheet: ./actions/sync_to_sheet.js
